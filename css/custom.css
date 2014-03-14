@@ -1,0 +1,107 @@
+::selection {
+	background: #B7DDE8; /* Safari */
+	color: black;
+	}
+::-moz-selection {
+	background: #B7DDE8; /* Firefox */
+	color: black;
+}
+
+body {
+	background-color: #252525;
+}
+
+.col-lg-8 {
+	border: 1px solid #B7DDE8;
+	background-color: #333333;
+	margin-top: 0;
+}
+
+.col-lg-4 {
+}
+
+.navbar {
+  background-color: white;
+  position: fixed;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  width: 100%;
+  opacity: 0.85;
+}
+
+
+.navbar-brand {
+  float: right;  
+  font-size: 22px;
+  
+}
+
+.navbar-header {
+	color: black;
+	font-family: 'Poiret One', cursive;
+	font-weight: 600;
+}
+
+
+.navbar-inverse .navbar-brand {
+  color: black;
+
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #B7DDE8;
+}
+
+.navbar-toggle {
+  float: left;
+  margin-left: 5px;
+  background-color: black;
+}
+
+.navbar-collapse li:hover{
+  color: black;
+  background-color: #B7DDE8;
+}
+
+.navbar-collapse ul {
+	color: black;
+}
+
+.carousel-h1 {
+	font-family: 'Gafata', sans-serif;
+	background-color: black;
+	opacity: 0.8;
+	border-radius: 20px;
+
+}
+
+.img-headshot {
+	  display: block;
+  	max-width: 100%;
+	height: auto;
+	border-radius: 10%;
+
+}
+
+.row {
+ 	 background-color: #252525;
+ 	 color: white;
+ 	 font-size: 1.1em;
+}
+
+.row p { 
+	font-family: 'Gafata', sans-serif;
+}
+.row h2 {
+	text-align: center;
+	color: #B7DDE8;
+	font-family: 'Muli', sans-serif;
+
+}
+
+@media (min-width: 768px) {
+	.navbar {
+
+}
+}
