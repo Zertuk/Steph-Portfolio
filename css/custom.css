@@ -7,6 +7,34 @@
 	color: black;
 }
 
+img {
+	max-width: 100%;
+width: auto;
+height: auto;
+vertical-align: middle;
+}
+
+.carousel-inner {
+	margin-top: 50px;
+}
+
+.main-caro {
+	background: url(https://scontent-b-ord.xx.fbcdn.net/hphotos-frc3/t1.0-9/382855_10151035731370471_2141739556_n.jpg) no-repeat right;
+	background-size: cover;
+}
+
+.second-caro {
+	background: url(http://www.bubblews.com/assets/images/news/1825371279_1382541931.jpg
+) no-repeat center;
+
+}
+
+.third-caro {
+	background: url(http://images4.fanpop.com/image/photos/16000000/Cute-Kitten-kittens-16096836-1280-800.jpg) no-repeat center;
+
+
+}
+
 body {
 	background-color: #252525;
 }
@@ -14,9 +42,9 @@ body {
 .col-lg-8 {
 	border: 1px solid #B7DDE8;
 	background-color: #333333;
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
+	max-width: 90%;
+	margin: 5%;
+	
 }
 
 .col-lg-4 {
@@ -67,9 +95,6 @@ body {
 .navbar-collapse li:hover{
   	background-color: #B7DDE8;
 }
-.navbar-collapse li:active{
-	background-color: grey;
-}
 
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
@@ -79,7 +104,6 @@ body {
 .navbar-inverse .navbar-nav > li > a {
 	color: black;
 }
-.navbar
 
 .carousel-h1 {
 	font-family: 'Gafata', sans-serif;
@@ -123,13 +147,24 @@ footer p {
 	color: white;
 }
 
-.glyphicon {
+footer a:hover {
+	color: orange;
+}
+footer .glyphicon {
 	color: white;
 	transition: 0.5s ease 0s;
 }
 
-.glyphicon:hover {
+footer .glyphicon:hover {
 	color: orange;
+}
+
+.main-caro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  max-width: none;
 }
 
 
@@ -137,11 +172,13 @@ footer p {
 @media (min-width: 768px) {
 	.navbar { 
 		margin-top: -20px;
-				border-radius: 0px;
-
+				
 	}
+}
 
-	.navbar .container{
-		border-radius: 0px;
+@media (min-width: 1200px) {
+	.col-lg-8 {
+		margin-left: 0;
+		margin-right: 0;
 	}
 }
