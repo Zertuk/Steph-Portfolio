@@ -39,15 +39,45 @@ body {
 	background-color: #252525;
 }
 
-.col-lg-8 {
+#about {
+	margin-bottom: 10%;
+	margin-top: 10%;
+}
+
+#images {
+	margin-bottom: 10%;
+}
+#resume {
+	margin-top: 10%;
+	margin-bottom: 5%;
+}
+#resume .col-lg-4 {
+	text-align: left;
+}
+
+object {
+	width: 100%;
+	height: 600px;
+}
+
+#about-text {
 	border: 1px solid #B7DDE8;
 	background-color: #333333;
 	max-width: 90%;
-	margin: 5%;
 	
 }
 
-.col-lg-4 {
+#vid1 {
+	background-color: #474747;
+	padding: 5%;
+	border: 2px solid #333333;
+}
+
+#video-text {
+	border: 1px solid #B7DDE8;
+	background-color: #333333;
+	max-width: 90%;
+	
 }
 
 .navbar {
@@ -141,6 +171,7 @@ footer {
 	margin-top: 25px;
 	background-color: black;
 	padding: 10%;
+	margin-bottom: -37px;
 }
 
 footer p {

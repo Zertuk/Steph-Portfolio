@@ -52,11 +52,11 @@
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#"><span class = "glyphicon glyphicon-home"></span> Home</a></li>
                 <li><a href="#about"><span class = "glyphicon glyphicon-user"></span> Bio</a></li>
-                <li><a href="#contact"><span class = "glyphicon glyphicon-eye-open"></span> Design</a></li>
-                <li><a href="#"><span class = "glyphicon glyphicon-picture"></span> Images</a></li>
-                <li><a href="#"><span class = "glyphicon glyphicon-film"></span> Videos</a></li>
-                <li><a href="#"><span class = " glyphicon glyphicon-list-alt"></span> Resume</a></li>
-                <li><a href="#"><span class = "glyphicon glyphicon-envelope"></span> Contact</a></li>
+                <li><a href="#images"><span class = "glyphicon glyphicon-picture"></span> Images</a></li>
+                <li><a href="#design"><span class = "glyphicon glyphicon-pencil"></span> Design</a></li>
+                <li><a href="#videos"><span class = "glyphicon glyphicon-film"></span> Videos</a></li>
+                <li><a href="#resume"><span class = " glyphicon glyphicon-list-alt"></span> Resume</a></li>
+                <li><a href="#contact"><span class = "glyphicon glyphicon-envelope"></span> Contact</a></li>
 
               </ul>
             </div>
@@ -114,13 +114,15 @@
 
     <div class="container marketing">
 
-      <!-- Three columns of text below the carousel -->
+
+    <section id = "about">
+
       <div class="row">
         <div class="col-lg-4">
           <img class="img-headshot" data-src="holder.js/100x100" alt="headshot" src = "img/headshot2.jpg">
           
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-8">
+        <div id = "about-text" class="col-lg-8">
           <h2>u r here?</h2>
 
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -132,9 +134,12 @@
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
 
 
-
         </div><!-- /.col-lg-8 -->
       </div><!-- /.row -->
+    </section>
+
+
+    <section id = "images">
       <div class = "row">
         <div class = "col-lg-12">
           <h2>Filter by Play</h2>
@@ -145,7 +150,7 @@
           <button class = "btn btn-default" data-filter-value="3" type="button">play 3</button>
           <button class = "btn btn-default" data-filter-value="4" type="button">play 4</button>
       </div><!-- /.button-group -->
-
+    
       <div class="isotope">
         <img class = "play1" data-category = "1" src = "img/headshot.jpg">
         <img class = "play2" data-category = "2" src = "img/headshot.jpg">
@@ -157,9 +162,107 @@
         </div><!-- /.col-lg-8 -->
       </div>
       </div><!-- /.row -->
+    </section>
+    
 
-      
+    <!--<section id = "design">
+    </section>-->
 
+    <section id = "videos">
+       <div id ="vid1" class = "row">  
+        <div id = "video-text" class = "col-lg-6">
+          <h2>Medea Monologue</h2>
+          <p>My 4th year at North Dakota State University, I worked on a Capstone Project to showcase what I had learned throughout the years. For this project, I compressed Euripides' Medea, found a director and lighting designer, and assembled a cast. I also put together the necessary arrangements to publicly perform, and starred as the title character. In this scene, Medea battles with the choice she has made to kill her children, as part of an overall master plan to get revenge on Jason.</p>
+        </div><!-- col-lg-6 -->
+        <div class = "col-lg-6">
+          <iframe src="http://player.vimeo.com/video/89370065?title=0&amp;byline=0&amp;portrait=0" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div><!-- col-lg-6 --> 
+      </div><!-- "row" -->  
+      <div id = "vid1" class = "row">  
+        <div id = "video-text" class = "col-lg-6">
+          <h2>Shakespeare's Globe 2011 Swordplay Workshop</h2>
+          <p>This video was taken while studying abroad with the American Institute for Foreign Study. The workshop was lead by Phillip Stafford at the Globe Theatre.</p>
+          <p>I have to say, what an incredible experience! And pretty enjoyable, too. I am so grateful that we were able to take this incredible workshop overseas, and I can't wait to return to London.</p>
+        </div><!-- col-lg-6 -->
+        <div class = "col-lg-6">
+          <iframe src="http://player.vimeo.com/video/89371595?title=0&amp;byline=0&amp;portrait=0" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div><!-- col-lg-6 --> 
+      </div><!-- "row" -->
+     </section>
+
+    <section id = "resume">
+      <div class = "row">
+        <div class = "col-lg-12">
+          <object data="resume.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0" type="application/pdf">
+          <embed src="resume.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0" type="application/pdf" />
+           </object>
+        </div>
+      </div>
+    </section>  
+
+      <!--<div class = "col-lg-4">
+        <p>Miss Julie</p>
+        <p>Shakespeare's Globe 2011: Performance of Scenes</p>
+        <p>Medea</p>
+        <p>The Apple Tree</p>
+        <p>Oklahoma!</p>
+        <p>Kindly Leave the Stage</p>
+        <p>Wokashi: A Collection of Japanese Kyogen Comedies</p>
+        <p>Amy's Wish</p>
+        <p>9 to 5: the Musical</p>
+        <p>Love's Labors Lost</p>
+        <p>MStepping on Cracks</p>
+
+      </div>
+      <div class = "col-lg-4">
+        <p>Julie</p>
+        <p>Beatrice</p>
+        <p>Medea</p>
+        <p>Passionella</p>
+        <p>Aunt Eller</p>
+        <p>Mrs. Cullen</p>
+        <p>Ogre/Chorus</p>
+        <p>Irma Pry</p>
+        <p>Maria Delgado</p>
+        <p>Maria</p>
+        <p>Mom</p>
+      </div>
+      <div class = "col-lg-4">
+        <p>NDSU Little Country Theatre</p>
+        <p>Shakespeare's Globe</p>
+        <p>NDSU Capstone Project*</p>
+        <p>Brownville Village Theatre</p>
+        <p>NDSU Little Country Theatre</p>
+        <p>Brownville Village Theatre</p>
+        <p>NDSU Little Country Theatre</p>
+        <p>Brownville Village Theatre</p>
+        <p>NDSU Little Country Theatre</p>
+        <p>NDSU Little Country Theatre</p>
+        <p>Storybookland Theatre</p>
+
+      </div>-->
+    
+    
+
+    <section id = "contact">
+      <div class ="row">
+        <h1>CONTACT STUFF</h1>
+
+      <div class = "col-lg-4">
+        <h3>Email</h3>
+        <p>22222@lol.com</p>
+        <h3>Phone</h3>
+        <p>222-222-2222</p>
+
+      </div>
+      <div class = "col-lg-8">
+        <div class = "form-group">
+          <input class = "form-control" placeholder="text"></input>
+        </div>
+    </div>
+
+
+    </section>
 
       
 
