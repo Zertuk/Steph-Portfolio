@@ -8,10 +8,10 @@ $(window).scroll(function() {
     }
 });
 
-
+//oh god this is so bad why am i doing this this way im stupid 
 
 $("li .image-page").on('click', (function(){
-    $("#images").show();
+    $("#images").fadeIn('slow');
     $("#about").hide();
     $("#myCarousel").hide();
     $("#videos").hide();
@@ -33,7 +33,7 @@ $("li .about-page").on('click', (function(){
 $("li .home-page").on('click', (function(){
     $("#images").hide();
     $("#about").hide();
-    $("#myCarousel").show();
+    $("#myCarousel").fadeIn('slow');
     $("#videos").hide();
     $("#contact").hide();
     $("#resume").hide();
@@ -44,7 +44,7 @@ $("li .video-page").on('click', (function(){
     $("#images").hide();
     $("#about").hide();
     $("#myCarousel").hide();
-    $("#videos").show();
+    $("#videos").fadeIn('slow');
     $("#contact").hide();
     $("#resume").hide();
 
@@ -55,7 +55,7 @@ $("li .contact-page").on('click', (function(){
     $("#about").hide();
     $("#myCarousel").hide();
     $("#videos").hide();
-    $("#contact").show();
+    $("#contact").fadeIn('slow');
     $("#resume").hide();
 
 }));
@@ -66,7 +66,7 @@ $("li .resume-page").on('click', (function(){
     $("#myCarousel").hide();
     $("#videos").hide();
     $("#contact").hide();
-    $("#resume").show();
+    $("#resume").fadeIn('slow');
 
 }));
 
