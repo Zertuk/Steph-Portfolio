@@ -18,6 +18,7 @@ vertical-align: middle;
 	margin-top: 50px;
 }
 
+
 .main-caro {
 	background: url(https://scontent-b-ord.xx.fbcdn.net/hphotos-frc3/t1.0-9/382855_10151035731370471_2141739556_n.jpg) no-repeat right;
 	background-size: cover;
@@ -35,6 +36,10 @@ vertical-align: middle;
 
 }
 
+.videos {
+	max-width: 100%;
+}
+
 body {
 	background-color: #252525;
 }
@@ -42,18 +47,28 @@ body {
 #about {
 	margin-bottom: 10%;
 	margin-top: 10%;
+	display: none;
 }
 
 #images {
 	margin-bottom: 10%;
+	display: none;
 }
 #resume {
 	margin-top: 10%;
 	margin-bottom: 5%;
+	display: none;
+}
+#videos {
+	display: none;
+}
+#contact{
+	display: none;
 }
 #resume .col-lg-4 {
 	text-align: left;
 }
+
 
 object {
 	width: 100%;
@@ -76,7 +91,8 @@ object {
 #video-text {
 	border: 1px solid #B7DDE8;
 	background-color: #333333;
-	max-width: 90%;
+	max-width: 100%;
+	margin-bottom: 5%;
 	
 }
 
@@ -171,10 +187,16 @@ footer {
 	margin-top: 25px;
 	background-color: black;
 	padding: 10%;
-	margin-bottom: -37px;
+	margin-bottom: -16%;
+	font-family: 'Gafata', sans-serif;
+
 }
 
 footer p {
+	color: white;
+}
+
+footer a {
 	color: white;
 }
 
@@ -194,10 +216,14 @@ footer .glyphicon:hover {
   position: absolute;
   top: 0;
   left: 0;
-  height: 200px;
+  height: 500px;
   max-width: none;
 }
 
+
+.carousel{
+     height:50px;
+   }
 
 
 @media (min-width: 768px) {
