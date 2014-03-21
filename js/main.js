@@ -13,7 +13,7 @@ $(window).scroll(function() {
 $("li .image-page").on('click', (function(){
     $("#images").fadeIn('slow');
     $("#about").hide();
-    $("#myCarousel").hide();
+    $(".caroufredsel_wrapper").hide();
     $("#videos").hide();
     $("#contact").hide();
     $("#resume").hide();
@@ -23,7 +23,7 @@ $("li .image-page").on('click', (function(){
 $("li .about-page").on('click', (function(){
     $("#images").hide();
     $("#about").fadeIn('slow');
-    $("#myCarousel").hide();
+    $(".caroufredsel_wrapper").hide();
     $("#videos").hide();
     $("#contact").hide();
     $("#resume").hide();
@@ -33,7 +33,7 @@ $("li .about-page").on('click', (function(){
 $("li .home-page").on('click', (function(){
     $("#images").hide();
     $("#about").hide();
-    $("#myCarousel").fadeIn('slow');
+    $(".caroufredsel_wrapper").fadeIn('slow');
     $("#videos").hide();
     $("#contact").hide();
     $("#resume").hide();
@@ -43,7 +43,7 @@ $("li .home-page").on('click', (function(){
 $("li .video-page").on('click', (function(){
     $("#images").hide();
     $("#about").hide();
-    $("#myCarousel").hide();
+    $(".caroufredsel_wrapper").hide();
     $("#videos").fadeIn('slow');
     $("#contact").hide();
     $("#resume").hide();
@@ -53,7 +53,7 @@ $("li .video-page").on('click', (function(){
 $("li .contact-page").on('click', (function(){
     $("#images").hide();
     $("#about").hide();
-    $("#myCarousel").hide();
+    $(".caroufredsel_wrapper").hide();
     $("#videos").hide();
     $("#contact").fadeIn('slow');
     $("#resume").hide();
@@ -63,14 +63,34 @@ $("li .contact-page").on('click', (function(){
 $("li .resume-page").on('click', (function(){
     $("#images").hide();
     $("#about").hide();
-    $("#myCarousel").hide();
+    $(".caroufredsel_wrapper").hide();
     $("#videos").hide();
     $("#contact").hide();
     $("#resume").fadeIn('slow');
 
 }));
 
+$(document).ready(function() {
+    $('#carousel').carouFredSel({
+        responsive: true,
+        height: 'variable',     
+        align: "center",
+        items               : 1,
+        direction           : "left",
+        items: {
+            height: 'auto',
+            
+        },
+        scroll : {
+            items           : 1,
+            easing          : "linear",
+            duration        : 1000,                         
+            pauseOnHover    : false
 
+        }                   
+
+    });
+});
 
 
 
