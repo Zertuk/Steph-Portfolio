@@ -79,6 +79,7 @@ object {
 	height: 1000px;
 }
 
+
 #about-text {
 	border: 1px solid #B7DDE8;
 	background-color: #333333;
@@ -192,6 +193,12 @@ object {
 .col-lg-12 {
 	text-align: center;
 }
+
+#filter {
+	margin-top: 50%;
+}
+
+
 .btn {
 	background-color: black;
 	color: white;
@@ -209,16 +216,21 @@ object {
 	color: black;
 }
 
+.big {
+	width: 100% !important;
+}
+
 #container {
-	max-width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
+	
+	margin-left: 8%;
+
 }
 
 
 .item {
-	max-width: 500px;
+	width: 500px;
 	padding: 5px;
+	margin: 0 auto;
 }
 
 .main {
@@ -227,10 +239,11 @@ object {
 
 
 footer {
-	padding: 2%;
 	background-color: black;
+	float: bottom;
 	padding: 10%;
-	margin-bottom: -16%;
+	padding-bottom: 100%;
+	margin-bottom: -50%;
 	font-family: 'Gafata', sans-serif;
 
 }
@@ -318,6 +331,26 @@ footer .glyphicon:hover {
           transition-duration: 0s;
 }
 
+@media (min-width: 320px) {
+	footer {
+		padding-bottom: 55%;
+	}
+
+	#filter {
+		margin-top: 20%;
+	}
+}
+
+@media (min-width: 500px) {
+	footer {
+		padding-bottom: 25%;
+	}
+
+	#filter {
+		margin-top: 5%;
+	}
+}
+
 
 @media (min-width: 768px) {
 	.navbar { 
@@ -337,6 +370,10 @@ footer .glyphicon:hover {
 #about {
 	margin-top: 10%;
 	
+}
+
+footer {
+	padding-bottom: 10%;
 }
 
 @media (min-width: 1200px) {

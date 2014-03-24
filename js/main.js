@@ -1,4 +1,6 @@
 //isotope image gallery
+$(function() {
+
 var $container = $('#container');
 
 $container.isotope({
@@ -10,7 +12,11 @@ $('#filter button').click(function() {
     $container.isotope({ filter: selector })
 });
 
-
+$(".item").click(function(){
+    $(this).toggleClass("big");
+    $("#container").isotope("reLayout");
+});
+});
 
 
 //make navbar translucent when not at top
@@ -26,6 +32,7 @@ $(window).scroll(function() {
 //switch the displayed section when navbar link clicked
 $("li .image-page").on('click', (function(){
     $("#images").fadeIn('slow');
+    $('.main').fadeIn('slow');
     $("#about").hide();
     $(".caroufredsel_wrapper").hide();
     $("#videos").hide();
