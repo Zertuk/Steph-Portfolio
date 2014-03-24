@@ -1,3 +1,17 @@
+//isotope image gallery
+var $container = $('#container');
+
+$container.isotope({
+    itemSelector : '.item'
+ });
+
+$('#filter button').click(function() {
+    var selector = $(this).attr('data-filter');
+    $container.isotope({ filter: selector })
+});
+
+
+
 
 //make navbar translucent when not at top
 $(window).scroll(function() {   
@@ -9,7 +23,7 @@ $(window).scroll(function() {
 });
 
 //oh god this is so bad why am i doing this this way im stupid 
-
+//switch the displayed section when navbar link clicked
 $("li .image-page").on('click', (function(){
     $("#images").fadeIn('slow');
     $("#about").hide();
@@ -70,6 +84,7 @@ $("li .resume-page").on('click', (function(){
 
 }));
 
+//caroFredSel carousel
 $(document).ready(function() {
     $('#carousel').carouFredSel({
         responsive: true,
@@ -83,14 +98,13 @@ $(document).ready(function() {
         },
         scroll : {
             items           : 1,
-            easing          : "linear",
             duration        : 1000,                         
-            pauseOnHover    : false
+            pauseOnHover    : false,
+            fx: 'crossfade'
 
         }                   
 
     });
 });
-
 
 
