@@ -28,7 +28,7 @@ $(window).scroll(function() {
     }
 });
 
-//oh god this is so bad why am i doing this this way im stupid 
+//oh god this is so bad why am i doing this this way 
 //switch the displayed section when navbar link clicked
 $("li .image-page").on('click', (function(){
     $("#images").fadeIn('slow');
@@ -90,6 +90,7 @@ $("li .resume-page").on('click', (function(){
     $("#resume").fadeIn('slow');
 
 }));
+
 
 //caroFredSel carousel
 $(document).ready(function() {
