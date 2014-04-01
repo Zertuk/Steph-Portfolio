@@ -53,6 +53,16 @@ section {
  	 background-color: #252525;
  	 color: white;
  	 font-size: 1.1em;
+ 	 width: 98%;
+ 	 margin: 0 auto;
+ }
+
+ .row {
+ 	 background-color: #252525;
+ 	 color: white;
+ 	 font-size: 1.1em;
+ 	 width: 98%;
+ 	 margin: 0 auto;
  }
 
 .row p { 
@@ -72,7 +82,7 @@ section {
   background-color: white;
   position: fixed;
   min-height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   width: 100%;
   opacity: 1;
 }
@@ -150,16 +160,21 @@ section {
 #about-text {
 	border: 1px solid #B7DDE8;
 	background-color: #333333;
-	max-width: 100%;	
+	max-width: 100%;
+	margin-top: 1%;
+	
 }
 
 .img-headshot {
 	border-radius: 10%;
-	margin-right: 5%;
-	margin-left: 5%;
+	margin-left: 10%;
+	margin-right: 10%;
 	width: 80%;
+	margin-top: 1%;
 
 }
+
+
 
 
 /*image page*/
@@ -215,19 +230,23 @@ section {
 
 .videos {
 	max-width: 98%;
-	margin-left: 1%;
-	margin-right: 1%;
-
+	margin: 0 auto;
+	border: none;
+	margin-bottom: 5%;
 }
 
-#vid1 {
+
+
+#vid, #vid2 {
 	background-color: #474747;
 	padding: 5%;
 	border: 2px solid #333333;
 	margin-top: 5%;
 }
 
-#video-text {
+
+
+.video-text {
 	border: 1px solid #B7DDE8;
 	background-color: #333333;
 	max-width: 100%;
@@ -359,7 +378,7 @@ footer .glyphicon:hover {
 				
 	}
 
-/* not sure why i need important */
+/* not sure why i need important here*/
 	.navbar-wrapper .navbar {
     border-radius: 0px !important; 
     }
