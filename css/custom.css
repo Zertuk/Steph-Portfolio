@@ -219,7 +219,7 @@ section {
 }
 
 .main {
-	max-width: 340px;
+	max-width: 30%;
 }
 
 /*video page*/
@@ -362,7 +362,7 @@ footer .glyphicon:hover {
 
 @media (min-width: 500px) {
 	footer {
-		padding-bottom: 25%;
+		padding-bottom: 35%;
 	}
 
 	#filter {
@@ -392,7 +392,7 @@ footer .glyphicon:hover {
 	}
 
 	footer {
-		padding-bottom: 10%;
+		padding-bottom: 15%;
 }
 
 @media (min-width: 1200px) {
